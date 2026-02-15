@@ -5,15 +5,16 @@ description: |
   Modern Software Engineering 5가지 원칙(Modularity, Cohesion, Separation of Concerns,
   Information Hiding, Coupling)을 기반으로 체계적인 코드 품질 분석과 개선 제안을 제공합니다.
 
-  다음과 같은 한국어 요청에 자동으로 트리거됩니다:
-  - "코드 리뷰해줘", "코드 검토해줘", "코드 봐줘", "코드 확인해줘"
-  - "이 코드 어때?", "이 코드 괜찮아?", "코드 품질 확인해줘"
-  - "리팩토링 제안해줘", "개선할 점 알려줘", "더 나은 코드로 만들어줘"
-  - "Tidy First 적용해줘", "결합도 낮춰줘", "응집도 높여줘"
-  - "중첩된 if문 제거해줘", "함수가 너무 긴데 어떻게 할까?"
-  - "이 코드 문제점 찾아줘", "코드 냄새 찾아줘", "안티패턴 있어?"
-  - "PR 리뷰해줘", "풀리퀘 검토해줘", "머지 전에 확인해줘"
-  - "/review", "/code-review", "/리뷰" 명령어
+  다음과 같은 요청에 자동으로 트리거됩니다:
+  - "코드 리뷰해줘", "review this code", "code review please"
+  - "리팩토링 제안해줘", "suggest refactoring", "improve this code"
+  - "코드 품질 확인해줘", "check code quality"
+  - "PR 리뷰해줘", "review PR", "review pull request"
+  - "/review", "/code-review"
+license: MIT
+metadata:
+  author: nelpos
+  version: "1.0.0"
 ---
 
 # Code Review Skill
