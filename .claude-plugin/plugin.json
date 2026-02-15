@@ -1,0 +1,16 @@
+{
+  "name": "code-review",
+  "version": "1.0.0",
+  "description": "Tidy First + Modern SE 원칙 기반 체계적 코드 리뷰 플러그인",
+  "author": {
+    "name": "nelpos"
+  },
+  "license": "MIT",
+  "keywords": [
+    "code-review",
+    "tidy-first",
+    "refactoring",
+    "typescript",
+    "nextjs"
+  ]
+}
