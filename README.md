@@ -142,7 +142,8 @@ code-review-plugin/
 │       │   ├── modern-engineering.md      # Modern SE 5원칙 체크리스트
 │       │   ├── language-guides/
 │       │   │   ├── typescript.md          # TypeScript 특화 가이드
-│       │   │   └── javascript.md          # JavaScript 특화 가이드
+│       │   │   ├── javascript.md          # JavaScript 특화 가이드
+│       │   │   └── python.md             # Python 특화 가이드
 │       │   └── framework-guides/
 │       │       ├── react.md               # React 특화 가이드
 │       │       └── nextjs.md              # Next.js 특화 가이드
@@ -161,6 +162,7 @@ code-review-plugin/
 |-----------------|--------|-----------|
 | TypeScript | `language-guides/typescript.md` | `tsconfig.json` |
 | JavaScript | `language-guides/javascript.md` | `package.json` |
+| Python | `language-guides/python.md` | `requirements.txt`, `setup.py`, `pyproject.toml` |
 | React | `framework-guides/react.md` | `react` 의존성 |
 | Next.js | `framework-guides/nextjs.md` | `next` 의존성 |
 
