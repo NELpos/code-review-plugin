@@ -43,7 +43,7 @@ metadata:
 
 **언어/프레임워크 자동 감지**:
 - `package.json` → TypeScript/JavaScript
-- `requirements.txt`, `setup.py` → Python
+- `requirements.txt`, `setup.py`, `pyproject.toml` → Python
 - `pom.xml`, `build.gradle` → Java
 - `Cargo.toml` → Rust
 - `go.mod` → Go
@@ -115,6 +115,7 @@ metadata:
 
 - **TypeScript**: `references/language-guides/typescript.md`
 - **JavaScript**: `references/language-guides/javascript.md`
+- **Python**: `references/language-guides/python.md`
 - **React**: `references/framework-guides/react.md`
 - **Next.js**: `references/framework-guides/nextjs.md`
 
