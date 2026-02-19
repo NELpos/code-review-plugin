@@ -24,6 +24,9 @@
 # 모든 감지된 에이전트에 설치
 npx skills add NELpos/code-review-plugin
 
+# 필요한 스킬만 명시적으로 설치
+npx skills add NELpos/code-review-plugin --skill code-review
+
 # 특정 에이전트만 대상
 npx skills add -a claude-code NELpos/code-review-plugin
 npx skills add -a codex NELpos/code-review-plugin
@@ -31,6 +34,18 @@ npx skills add -a antigravity NELpos/code-review-plugin
 
 # 글로벌 설치 (모든 프로젝트에서 사용)
 npx skills add -g NELpos/code-review-plugin
+```
+
+### Claude Code sub-agent 적용 (선택)
+
+`npx skills`는 스킬(`SKILL.md`) 중심으로 설치됩니다. Claude Code의 sub-agent는 별도 경로(`.claude/agents` 또는 `~/.claude/agents`)를 사용하므로 post-install을 1회 실행하세요.
+
+```bash
+# 프로젝트 범위 설치 (.claude/agents)
+bash .claude/skills/code-review/scripts/install-claude-subagents.sh
+
+# 글로벌 설치 (~/.claude/agents)
+bash ~/.claude/skills/code-review/scripts/install-claude-subagents.sh --global
 ```
 
 ### 방법 2: 수동 설치
@@ -149,9 +164,14 @@ code-review-plugin/
 │       │       └── nextjs.md              # Next.js 특화 가이드
 │       ├── scripts/
 │       │   ├── analyze-complexity.ts      # 복잡도 분석 스크립트
+│       │   ├── install-claude-subagents.sh # Claude sub-agent 설치 스크립트
 │       │   └── tsconfig.json
 │       └── assets/
-│           └── review-template.md         # 리뷰 리포트 템플릿
+│           ├── review-template.md         # 리뷰 리포트 템플릿
+│           └── sub-agents/                # sub-agent 템플릿
+│               ├── code-reviewer.md
+│               ├── security-reviewer.md
+│               └── performance-reviewer.md
 ├── README.md
 └── LICENSE
 ```

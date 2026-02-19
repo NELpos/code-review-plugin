@@ -1,5 +1,18 @@
 # Python 코드 리뷰 가이드
 
+## 목차
+- 개요
+- 1. 타입 힌트와 안전성 (Type Hints & Safety)
+- 2. Pythonic 패턴 (Pythonic Patterns)
+- 3. 에러 처리 (Error Handling)
+- 4. 비동기 처리 (Async Patterns)
+- 5. 모듈 구성 (Module Organization)
+- 6. 데이터 클래스와 불변성 (Data Classes & Immutability)
+- 7. 함수 설계 (Function Design)
+- 8. 통합 체크리스트
+- Before/After 제공 가이드
+
+
 ## 개요
 
 **Python 코드 리뷰 가이드**는 Tidy First 원칙과 Modern Software Engineering 관점에서 Python 코드를 리뷰할 때 참고하는 언어별 가이드입니다. 타입 힌트, Pythonic 패턴, 에러 처리, 비동기 처리, 모듈 구성, 데이터 클래스/불변성, 함수 설계의 7가지 영역을 다루며, 각 영역별 체크리스트와 Before/After 예시를 제공합니다.
