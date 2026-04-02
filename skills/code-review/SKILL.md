@@ -1,6 +1,6 @@
 ---
 name: code-review
-description: Analyze source code quality and propose prioritized fixes using Tidy First and Modern Software Engineering principles. Use for requests like code review, PR review, refactoring suggestions, architecture quality checks, maintainability analysis, or improvement proposals across TypeScript, JavaScript, Python, React, and Next.js codebases.
+description: Analyze source code quality and propose prioritized fixes using Tidy First and Modern Software Engineering principles. Use for requests like code review, PR review, refactoring suggestions, architecture quality checks, maintainability analysis, or improvement proposals across TypeScript, JavaScript, Python, React, Next.js, Vue 2, and Express codebases.
 ---
 
 # Code Review Skill
@@ -35,6 +35,8 @@ description: Analyze source code quality and propose prioritized fixes using Tid
 - `package.json`: TypeScript/JavaScript 후보
 - `requirements.txt`, `pyproject.toml`: Python 후보
 - React/Next.js 파일 패턴(`*.tsx`, `app/`, `next.config.*`) 확인
+- Vue 파일 패턴(`*.vue`, `vue.config.*`, `Vue.use(`)으로 Vue 2 확인
+- Express 패턴(`express()`, `app.listen`, `router.get/post`)으로 Express 확인
 
 4. 1차 리뷰를 수행한다 (Tidy First).
 - Guard Clauses
@@ -57,6 +59,8 @@ description: Analyze source code quality and propose prioritized fixes using Tid
 - Python: `references/language-guides/python.md`
 - React: `references/framework-guides/react.md`
 - Next.js: `references/framework-guides/nextjs.md`
+- Vue 2: `references/framework-guides/vue2.md`
+- Express: `references/framework-guides/express.md`
 
 7. 이슈를 우선순위로 분류한다.
 - `High`: 버그 가능성, 보안/성능 리스크, 테스트 불가능 구조, 순환 의존성
@@ -159,4 +163,6 @@ sub-agent 호출 시 아래 정보를 반드시 포함한다.
 - Python: `references/language-guides/python.md`
 - React: `references/framework-guides/react.md`
 - Next.js: `references/framework-guides/nextjs.md`
+- Vue 2: `references/framework-guides/vue2.md`
+- Express: `references/framework-guides/express.md`
 - 리뷰 템플릿: `assets/review-template.md`
